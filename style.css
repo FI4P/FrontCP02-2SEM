@@ -52,6 +52,8 @@ div#app{
 
 
 
+
+
 div#app header, 
 nav, 
 nav ul{
@@ -64,6 +66,17 @@ nav ul{
     font-weight: 700;
     line-height: 160%;
     color: var(--header-nav-font-color);
+}
+
+div#app header nav img{
+    width: 15%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+div#app header nav img:hover{
+    filter: opacity(70%);
 }
 
 
@@ -148,11 +161,29 @@ div#app header img.avatar:hover{
 
 
 
-.container{
+.container-nav{
     padding: 1.6rem 3.2rem;
     width: min(112rem ,100%);
     margin: 0 auto;
+   
     
+}
+
+.container{
+    padding: 1.6rem 3.2rem;
+    width: min(112rem ,100%);
+    margin: 0 auto;    
+}
+
+.carrousel{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#carouselExample{
+   margin: 0 auto; 
+   width: 50%;
 }
 
 
@@ -169,7 +200,7 @@ main{
     
 }
 
-main div.container h1{
+main div.container h1, h2.best-sallers{
     font-size: 2.4rem;
     padding: 1.6rem 0 0;
     
